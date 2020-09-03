@@ -31,7 +31,7 @@ class Layout extends Array {
     When the layout is complete, call draw to retrieve a list of strings to display. 
   */
   draw(){
-    this.map(row => console.log(row.join('')))
+    return this.map(row => `${row.join('')}\n`)
   }
 
   /*

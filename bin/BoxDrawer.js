@@ -91,7 +91,7 @@ class BoxDrawer {
 
     try{
       layout = this.layout(ast);
-      layout.draw();
+      return layout.draw();
     }catch(e){
       throw new LayoutError(e.message);
     }
